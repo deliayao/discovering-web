@@ -1,0 +1,81 @@
+body {
+    background-image: url('images\\background.png');
+    font-size: 100%;
+}
+#main {
+    background-color: #ffffff;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 3%;
+    position: relative;
+}
+#navigation {
+    font-family: 'Museo300Regular', 'Georgia', serif;
+    font-size: 0.9em;
+    text-align: center;
+    text-transform: uppercase;
+}
+#navigation a {
+    color: #d0d0d0;
+    text-decoration: none;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
+#navigation a:hover {
+    color: #f02311;
+}
+#title {
+    color: #a0a0a0;
+    font-family: 'Museo300Regular', 'Georgia', serif;
+    font-size: 2.5em;
+}
+#tagline {
+    color: #000000;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 10px;
+}
+.post {
+    margin-top: 50px;
+    position: relative;
+}
+.post-title {
+    color: #606060;
+    font-family: 'Museo300Regular', 'Georgia', serif;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+.post-body {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.post-body a {
+    color: #606060;
+    text-decoration: none;
+
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
+.post-body a:hover {
+    color: #f02311;
+}
+.post-time {
+    color: #d0d0d0;
+    font-family: 'Museo300Regular', 'Georgia', serif;
+    font-size: 0.75em;
+
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
