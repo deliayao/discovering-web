@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style type="text/css">
+        body {
+            background-color: #8693f1;
+            font-size: 100%;
+            font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+        }
+        p {
+            font-size: 2em;
+        }
+        .container, p {
+            /* position */
+            display: block;
+            margin-top: 10%;
+            text-align: center;
+
+            /* style */
+            color: #ffffff;
+        }
+        .dot {
+            /* position and size */
+            display: inline-block;
+            height: 2em;
+            width: 2em;
+
+            -webkit-transform: scale(0, 0);
+            -ms-transform: scale(0, 0);
+            transform: scale(0, 0);
+
+            /* style */
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+        .container div:nth-child(1) {
+            -webkit-animation: grow 3.0s infinite linear;
+            animation: grow 3.0s infinite linear;
+        }
+        .container div:nth-child(2) {
+            -webkit-animation: grow 3.0s infinite 0.5s linear;
+            animation: grow 3.0s infinite 0.5s linear;
+        }
+        .container div:nth-child(3) {
+            -webkit-animation: grow 3.0s infinite 1.0s linear;
+            animation: grow 3.0s infinite 1.0s linear;
+        }
+        .container div:nth-child(4) {
+            -webkit-animation: grow 3.0s infinite 1.5s linear;
+            animation: grow 3.0s infinite 1.5s linear;
+        }
+        .container div:nth-child(5) {
+            -webkit-animation: grow 3.0s infinite 2.0s linear;
+            animation: grow 3.0s infinite 2.0s linear;
+        }
+
+        /* keyframes */
+        @-webkit-keyframes grow {
+            0%, 100% {-webkit-transform: scale(0, 0);}
+            50% {-webkit-transform: scale(1, 1);}
+        }
+        @keyframes grow {
+            0%, 100% {transform: scale(0, 0);}
+            50% {transform: scale(1, 1);}
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <p>Forever spores.</p>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style type="text/css">
+        body {
+            background-color: #1a8ac3;
+            font-size: 75px;
+            font-family: Georgia, Times, "Times New Roman", serif;
+        }
+        p {
+            /* position and size */
+            display: block;
+            text-align: center;
+
+            /* typography */
+            color: #ffffff;
+            font-size: 0.5em;
+        }    
+        .container {
+            /* position and size */
+            display: block;
+            margin: 10% auto;
+            height: 1em;
+            width: 1em;
+        
+            /* styles */
+            border-radius: 50%;
+            color: #ffffff;
+
+            /* animations */
+            -webkit-animation: rotate 3.0s infinite linear;
+            animation: rotate 3.0s infinite linear;
+        }
+        .dot {
+            /* position and size */
+            position: absolute;
+            height: 0.2em;
+            width: 0.2em;
+
+            /* styles */
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+
+        /* each dot (child div) is placed appropriately around the circle */
+        .container div:nth-child(1) {
+            /* position */
+            margin-left: -10%;
+            top: 0;
+            left: 50%;
+            
+            /* animations */
+            -webkit-animation: fade 2.0s infinite linear;
+            animation: fade 2.0s infinite linear;
+        }
+        .container div:nth-child(2) {
+            /* position */
+            top: 12.5%; 
+            left: 70.5%;
+            
+            /* animations */
+            -webkit-animation: fade 2.0s infinite linear 0.2s;
+            animation: fade 2.0s infinite linear 0.2s;
+        }
+        .container div:nth-child(3) {
+            /* position */
+            margin-top: -10%;
+            top: 50%;
+            right: 0; 
+            
+            /* animations */
+            -webkit-animation: fade 2.0s infinite linear 0.4s;
+            animation: fade 2.0s infinite linear 0.4s;
+        }
+        .container div:nth-child(4) {
+            /* position */
+            bottom: 12.5%; 
+            left: 70.5%;
+
+            /* animations */
+            -webkit-animation: fade 2.0s infinite linear 0.6s;
+            animation: fade 2.0s infinite linear 0.6s;
+        }
+        .container div:nth-child(5) {
+            /* position */
+            margin-left: -10%;
+            bottom: 0;
+            left: 50%;
+            
+            /* animations */
+            -webkit-animation: fade 2.0s infinite linear 0.8s;
+            animation: fade 2.0s infinite linear 0.8s;
+        }
+        .container div:nth-child(6) {
+            /* position */
+            bottom: 12.5%; 
+            right: 70.5%;
+
+            /* animations */
+            -webkit-animation: fade 2.0s infinite linear 1s;
+            animation: fade 2.0s infinite linear 1s;
+        }
+        .container div:nth-child(7) {
+            /* position */
+            margin-top: -10%;
+            top: 50%;
+            left: 0; 
+            
+            /* animations */
+            -webkit-animation: fade 2.0s infinite linear 1.2s;
+            animation: fade 2.0s infinite linear 1.2s;
+        }
+        .container div:nth-child(8) {
+            /* position */
+            top: 12.5%; 
+            right: 70.5%;
+
+            /* animations */
+            -webkit-animation: fade 2.0s infinite linear 1.4s;
+            animation: fade 2.0s infinite linear 1.4s;
+        }
+
+        /* keyframes */
+        @-webkit-keyframes rotate {
+            to {-webkit-transform: rotate(-360deg);}
+        }
+        @keyframes rotate {
+            to {transform: rotate(-360deg);}
+        }
+        @-webkit-keyframes fade {
+            0%, 100% {opacity: 1.0;}
+            50% {opacity: 0;}
+        }
+        @keyframes fade {
+            0%, 100% {opacity: 1.0;}
+            50% {opacity: 0;}
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <p>On the clock.</p>
+    </body>
+</html>

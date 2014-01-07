@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style type="text/css">
+        body {
+            background-color: #e79d45;
+            font-size: 100%;
+            font-family: Georgia, Times, "Times New Roman", serif;
+        }
+        p {
+            font-size: 2em;
+        }
+        .container, p {
+            /* position */
+            display: block;
+            margin: 10%;
+            text-align: center;
+
+            /* style */
+            color: #ffffff;
+        }
+        .dot {
+            /* position and size */
+            display: inline-block;
+            height: 1em;
+            width: 1em;
+
+            /* style */
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+        .container div:nth-child(1) {
+            -webkit-animation: jump 2.0s infinite;
+            animation: jump 2.0s infinite;
+        }
+        .container div:nth-child(2) {
+            -webkit-animation: jump 2.0s infinite 0.4s;
+            animation: jump 2.0s infinite 0.4s;
+        }
+        .container div:nth-child(3) {
+            -webkit-animation: jump 2.0s infinite 0.8s;
+            animation: jump 2.0s infinite 0.8s;
+        }
+        .container div:nth-child(4) {
+            -webkit-animation: jump 2.0s infinite 1.2s;
+            animation: jump 2.0s infinite 1.2s;
+        }
+        .container div:nth-child(5) {
+            -webkit-animation: jump 2.0s infinite 1.6s;
+            animation: jump 2.0s infinite 1.6s;
+        }
+
+        /* keyframes */
+        @-webkit-keyframes jump {
+            0%, 100% {-webkit-transform: translateY(0px);}
+            50% {-webkit-transform: translateY(-20px);}
+        }
+        @keyframes jump {
+            0%, 100% {transform: translateY(0px);}
+            50% {transform: translateY(-20px);}
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <p>Do the wave!</p>
+    </body>
+</html>
